@@ -1,0 +1,13 @@
+C:\Users\user\Desktop\MVC_Project\ProniaMVC\ProniaMVC.Core\bin\Debug\net6.0\ProniaMVC.Core.deps.json
+C:\Users\user\Desktop\MVC_Project\ProniaMVC\ProniaMVC.Core\bin\Debug\net6.0\ProniaMVC.Core.dll
+C:\Users\user\Desktop\MVC_Project\ProniaMVC\ProniaMVC.Core\bin\Debug\net6.0\ProniaMVC.Core.pdb
+C:\Users\user\Desktop\MVC_Project\ProniaMVC\ProniaMVC.Core\obj\Debug\net6.0\ProniaMVC.Core.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\MVC_Project\ProniaMVC\ProniaMVC.Core\obj\Debug\net6.0\ProniaMVC.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\MVC_Project\ProniaMVC\ProniaMVC.Core\obj\Debug\net6.0\ProniaMVC.Core.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\MVC_Project\ProniaMVC\ProniaMVC.Core\obj\Debug\net6.0\ProniaMVC.Core.AssemblyInfo.cs
+C:\Users\user\Desktop\MVC_Project\ProniaMVC\ProniaMVC.Core\obj\Debug\net6.0\ProniaMVC.Core.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\MVC_Project\ProniaMVC\ProniaMVC.Core\obj\Debug\net6.0\ProniaMVC.Core.sourcelink.json
+C:\Users\user\Desktop\MVC_Project\ProniaMVC\ProniaMVC.Core\obj\Debug\net6.0\ProniaMVC.Core.dll
+C:\Users\user\Desktop\MVC_Project\ProniaMVC\ProniaMVC.Core\obj\Debug\net6.0\refint\ProniaMVC.Core.dll
+C:\Users\user\Desktop\MVC_Project\ProniaMVC\ProniaMVC.Core\obj\Debug\net6.0\ProniaMVC.Core.pdb
+C:\Users\user\Desktop\MVC_Project\ProniaMVC\ProniaMVC.Core\obj\Debug\net6.0\ref\ProniaMVC.Core.dll
