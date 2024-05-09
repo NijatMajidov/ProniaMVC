@@ -16,6 +16,8 @@ opt.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
 });
 builder.Services.AddScoped<ICategoryService,CategoryService>();
 builder.Services.AddScoped<ICategoryRepository,CategoryRepository>();
+builder.Services.AddScoped<ISliderService,SliderService>();
+builder.Services.AddScoped<ISliderRepository,SliderRepository>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

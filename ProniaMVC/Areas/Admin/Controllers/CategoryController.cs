@@ -30,7 +30,10 @@ namespace ProniaMVC.Areas.Admin.Controllers
         [HttpPost]
         public IActionResult Create(Category category)
         {
-            if(!ModelState.IsValid) return View();
+            if (!ModelState.IsValid)
+            { 
+                return View(); 
+            }
             try
             {
                 _categoryService.AddCategory(category);
@@ -42,7 +45,8 @@ namespace ProniaMVC.Areas.Admin.Controllers
             }
             catch (Exception ex)
             {
-                throw;
+
+                ModelState.AddModelError("", "An error occurred while creating the category.");
             }
             return RedirectToAction("Index");
         }
@@ -61,17 +65,37 @@ namespace ProniaMVC.Areas.Admin.Controllers
         }
 
         [HttpPost]
-        public IActionResult Update(Category newCategory)
+        public IActionResult Update(Category updatedCategory)
         {
+            if (!ModelState.IsValid)
+            {
+                return View(updatedCategory);
+            }
 
-            _categoryService.UpdaterCategory(newCategory.Id,newCategory);
-
-            return RedirectToAction(nameof(Index));
+            try
+            {
+                _categoryService.UpdaterCategory(1, updatedCategory);
+                return RedirectToAction(nameof(Index));
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("", "An error occurred while updating the category.");
+                return View(updatedCategory);
+            }
         }
+
         public IActionResult Delete(int id)
         {
-            _categoryService.DeleteCategory(id);
-            return RedirectToAction("Index");
+            try
+            {
+                _categoryService.DeleteCategory(id);
+                return RedirectToAction("Index");
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("", "An error occurred while deleting the category.");
+                return RedirectToAction("Index");
+            }
         }
 
     }

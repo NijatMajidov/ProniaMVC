@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace ProniaMVC.Business.Services.Concretes
 {
-    internal class SliderService : ISliderService
+    public class SliderService : ISliderService
     {
         private readonly ISliderRepository _sliderRepository;
 
@@ -33,17 +33,20 @@ namespace ProniaMVC.Business.Services.Concretes
 
         public void DeleteSlider(int id)
         {
-            throw new NotImplementedException();
+            var existSlider = _sliderRepository.Get(x => x.Id == id);
+            if (existSlider == null) throw new NullReferenceException("This slider does not exist!");
+            _sliderRepository.Delete(existSlider);
+            _sliderRepository.Commit();
         }
 
         public List<Slider> GetAllSliders(Func<Slider, bool>? func = null)
         {
-            throw new NotImplementedException();
+            return _sliderRepository.GetAll(func);
         }
 
         public Slider GetSlider(Func<Slider, bool>? func = null)
         {
-            throw new NotImplementedException();
+            return _sliderRepository.Get(func);
         }
 
         public void UpdaterSlider(int id, Slider slider)
