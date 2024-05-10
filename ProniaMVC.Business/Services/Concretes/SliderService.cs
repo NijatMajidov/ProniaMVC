@@ -20,7 +20,7 @@ namespace ProniaMVC.Business.Services.Concretes
             _sliderRepository = sliderRepository;
         }
 
-        public void AddSlider(Slider slider)
+        public void CreateSlider(Slider slider)
         {
             if (slider == null) throw new NullReferenceException("Slider cannot be null!!!!");
             if (!_sliderRepository.GetAll().Any(x => x.ImageUrl == slider.ImageUrl))
@@ -51,7 +51,17 @@ namespace ProniaMVC.Business.Services.Concretes
 
         public void UpdaterSlider(int id, Slider slider)
         {
-            throw new NotImplementedException();
+            Slider oldSlider = _sliderRepository.Get(x => x.Id == id);
+            if (oldSlider == null) throw new NullReferenceException("Bele bir Slider Yoxdur!");
+            else
+            {
+                oldSlider.Title = slider.Title;
+                oldSlider.SubTitle = slider.SubTitle;
+                oldSlider.Description = slider.Description;
+                oldSlider.ImageUrl = slider.ImageUrl;
+                _sliderRepository.Commit();
+            }
+            
         }
     }
 }

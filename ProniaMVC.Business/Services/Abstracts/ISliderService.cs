@@ -9,7 +9,7 @@ namespace ProniaMVC.Business.Services.Abstracts
 {
     public interface ISliderService
     {
-        void AddSlider(Slider slider);
+        void CreateSlider(Slider slider);
         void DeleteSlider(int id);
         void UpdaterSlider(int id, Slider slider);
         Slider GetSlider(Func<Slider, bool>? func = null);

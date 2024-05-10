@@ -9,7 +9,7 @@ namespace ProniaMVC.Business.Services.Abstracts
 {
     public interface ICategoryService
     {
-        void AddCategory(Category category);
+        void CreateCategory(Category category);
         void DeleteCategory(int id);
         void UpdaterCategory(int id,Category category);
         Category GetCategory(Func<Category, bool>? func=null);

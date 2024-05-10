@@ -35,7 +35,7 @@ namespace ProniaMVC.Data.RepositoryConcretes
         {
             return func == null ?
                 _dbContext.Set<T>().FirstOrDefault() :
-                _dbContext.Set<T>().FirstOrDefault(func);
+                _dbContext.Set<T>().Where(func).FirstOrDefault();
         }
 
         public List<T> GetAll(Func<T, bool>? func = null)

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "YOWxZ0U0c32W5bB/p2k/zMXQHJFZB6fFUZCdI6/Wm1s=",
+  "Hash": "BxpP2x5iRRnAjsI5msyPX0zaQGi1xOJKzZmw6xw1Bzs=",
   "Source": "ProniaMVC",
   "BasePath": "_content/ProniaMVC",
   "Mode": "Default",
@@ -39288,6 +39288,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\scss\\style.scss"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\MVC_Project\\ProniaMVC\\ProniaMVC\\wwwroot\\Upload\\Sliders\\1-1-270x300.jpg",
+      "SourceId": "ProniaMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\MVC_Project\\ProniaMVC\\ProniaMVC\\wwwroot\\",
+      "BasePath": "_content/ProniaMVC",
+      "RelativePath": "Upload/Sliders/1-1-270x300.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Upload\\Sliders\\1-1-270x300.jpg"
     }
   ]
 }

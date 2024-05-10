@@ -17,7 +17,7 @@ namespace ProniaMVC.Business.Services.Concretes
         {
             _categoryRepository = categoryRepository;
         }
-        public void AddCategory(Category category)
+        public void CreateCategory(Category category)
         {
             if (category == null) throw new NullReferenceException("Category cannot be null!!!!");
             if (!_categoryRepository.GetAll().Any(x => x.Name == category.Name))

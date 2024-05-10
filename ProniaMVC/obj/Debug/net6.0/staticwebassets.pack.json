@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\ProniaMVC.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\user\\Desktop\\MVC_Project\\ProniaMVC\\ProniaMVC\\wwwroot\\Upload\\Sliders\\1-1-270x300.jpg",
+      "PackagePath": "staticwebassets\\Upload\\Sliders\\1-1-270x300.jpg"
+    },
+    {
       "Id": "C:\\Users\\user\\Desktop\\MVC_Project\\ProniaMVC\\ProniaMVC\\wwwroot\\admin\\css\\sb-admin-2.css",
       "PackagePath": "staticwebassets\\admin\\css\\sb-admin-2.css"
     },

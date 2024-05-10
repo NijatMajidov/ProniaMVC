@@ -36,7 +36,7 @@ namespace ProniaMVC.Areas.Admin.Controllers
             }
             try
             {
-                _categoryService.AddCategory(category);
+                _categoryService.CreateCategory(category);
             }
             catch (DublicateCategoryException ex)
             {
@@ -67,6 +67,7 @@ namespace ProniaMVC.Areas.Admin.Controllers
         [HttpPost]
         public IActionResult Update(Category updatedCategory)
         {
+            Category oldCategory = _categoryService.GetCategory(x=>x.Id==updatedCategory.Id);
             if (!ModelState.IsValid)
             {
                 return View(updatedCategory);
@@ -74,7 +75,7 @@ namespace ProniaMVC.Areas.Admin.Controllers
 
             try
             {
-                _categoryService.UpdaterCategory(1, updatedCategory);
+                _categoryService.UpdaterCategory(oldCategory.Id, updatedCategory);
                 return RedirectToAction(nameof(Index));
             }
             catch (Exception ex)
